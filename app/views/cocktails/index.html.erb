@@ -1,8 +1,8 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid" style="background-color: #CBE8C4; border-bottom: 2px solid #90be6d">
   <div class="container">
     <div class="index-jumbotron">
-      <h1 class="display-2">THE DOUBLE TROUBLE COCKTAIL BAR </h1>
-      <p class="lead display-4 sub-header" >The place where everything comes in TWO!</p>
+      <h1 class="display-2" style="text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;">THE DOUBLE TROUBLE COCKTAIL BAR </h1>
+      <p class="lead display-4 sub-header" >The place where everything comes in pairs!</p>
     </div>
   </div>
 </div>
@@ -14,7 +14,8 @@
         <div class="cocktail-card" >
             <h2 id="card-heading"><%=cocktail.name%></h2>
               <div class="card-delete">
-                  <%=link_to "X", cocktail_path(cocktail.id), class:"btn btn-outline-danger"%>
+                  <%=link_to "X", cocktail_path(cocktail.id), class:"btn btn-outline-success", data: {
+                    confirm: "Aru you sure you want to delete: #{cocktail.name}?",} ,method: :delete %>
               </div>
             <%= image_tag "#{random}.jpg", class:"grid-image" %>
             <div class="card-button">
@@ -25,9 +26,7 @@
   </div>
 </div>
 
-
-
-<div class="jumbotron">
+<div class="jumbotron" style="background-color: #CBE8C4; border: 2px solid #90be6d">
   <div class="center-within">
     <%=link_to "Add Cocktail", new_cocktail_path, class: "btn btn-outline-success btn-lg"%>   
   </div>

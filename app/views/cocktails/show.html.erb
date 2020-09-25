@@ -1,20 +1,22 @@
-
-
 <%# Allowing the user to add doses to the cocktail! %>¨
 <div class="container form-container-new">
   <h1><%=@cocktail.name %></h1>
+  <div class="form-ingredients">
+    <ul class ="form-list">
+      <% @cocktail.doses.each do |dose| %>
+        <li><%= dose.ingredient_name %> - <%= dose.description %> <span class="form-delete-button"><%= link_to "X", @coctail_path, class:" btn btn-outline-danger btn-sm" %></li> </span>  
+      <% end %>
+    </ul>
+  </div>
   
+  <div class="form-add-ingredient">
   <%= simple_form_for([@cocktail, @dose]) do |f| %>
   <%= f.association :ingredient %>
   <%= f.input :description %>
-  <%= f.submit 'Add Ingredient' %>  
+  <%= f.submit 'Add Ingredient', class: "btn btn-outline-success" %>  
   <% end %>
-
-<ul class ="form-list">
-    <% @cocktail.doses.each do |dose| %>
-      <li><%= dose.ingredient_name %> - <%= dose.description %> <span class="form-delete-button"><%= link_to "delete", @coctail_path, class:" btn btn-warning btn-sm" %></li> </span>  
-    <% end %>
-  </ul>
+</div>
+<%# <% raise %> 
 
 <div class="button">
 

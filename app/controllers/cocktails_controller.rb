@@ -20,14 +20,29 @@ class CocktailsController < ApplicationController
       redirect_to @cocktail     
     else
       render :new
-    end
-    
+    end    
+  end
+
+  def edit
+    @cocktail = Cocktail.find(cocktail_params)
+
+    if @cocktail.save
+      redirect_to @cocktail     
+    else
+      render :new
+    end    
+  end
+
+  def destroy
+    cocktail = Cocktail.find(params[:id])
+    cocktail.destroy
+    redirect_to cocktails_path, notice: "You deleted #{cocktail.name}"
   end
 
   private 
   
   def cocktail_params
-  params.require(:cocktail).permit(:name)
+  params.require(:cocktail).permit(:name, :photo)
   end
 
 end

@@ -1,18 +1,18 @@
-.form-container {
-  height: 250px; 
-  width: 500px;
-  background-color:white;
-  margin-top: 200px; 
-  border: 1px solid lightblue;
-  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
-  text-align: center;
-  display:flex;
-  justify-content: space-evenly;
-  align-items: center;  
-}
+// .form-container {
+//   height: 250px; 
+//   width: 500px;
+//   background-color:white;
+//   margin-top: 200px; 
+//   border: 1px solid lightblue;
+//   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
+//   text-align: center;
+//   display:flex;
+//   justify-content: space-evenly;
+//   align-items: center;  
+// }
 
 .form-container-new {
-  height: 500px; 
+  height: 700px; 
   width: 500px;
   background-color:white;
   margin-top: 200px; 
@@ -26,14 +26,27 @@
 .form-delete-button {
   position: absolute;
   right: 20px; 
+  
 }
-
 
 .form-list {
   list-style-type: none;
   text-align: left;
+  border: 1px solid lightblue;
+  padding-bottom: 10px;
+}
+
+.form-ingredients {
+  
+  color:black;
+  font-weight: bold;
+}
+
+.form-add-ingredient {
+  margin: 50px;
+  font-weight: bold;
 }
 
 body {
- background-color: #F4F4F4;
+ background-color: #DAD9E8;
 }
