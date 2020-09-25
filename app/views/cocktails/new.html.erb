@@ -1,4 +1,9 @@
-<%= simple_form_for(@cocktail) do |f| %>
-<%= f.input :name %>
-<%= f.submit 'Save Cocktail' %>
-<% end %>
+<div class="container form-container">
+  <%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit 'Add Cocktail', class: "btn btn-primary"%>
+  <%= link_to "Go back to all coctails", cocktails_path, class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+

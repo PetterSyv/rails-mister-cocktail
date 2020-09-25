@@ -1,0 +1,51 @@
+.index-jumbotron {
+  text-align: center;
+}
+.sub-header {
+  opacity: 0.75;
+}
+
+.grid-container { 
+  padding: 2rem; 
+}
+ .cards-grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 350px; 
+  grid-gap: 30px;
+  margin-left: 100px; 
+  margin-right: 100px; 
+} 
+
+.cocktail-card {
+  position: relative;
+  background-color:white;
+  text-align: center;
+  opacity: 0.9;
+  // font-size: 12px;
+}
+
+#card-heading {
+  opacity: 0.8;
+  color: $green;
+}
+
+.grid-image {
+    width: 250px;
+    height: 250px; 
+    background-color: white;
+}
+
+.card-button {
+  // position: absolute;
+  // bottom: 12px;
+  // right: 150px;
+  margin: 0 auto; 
+  margin-top: 10px;
+}
+
+.center-within {
+  // margin: 0 auto;
+  text-align: center; 
+}
+

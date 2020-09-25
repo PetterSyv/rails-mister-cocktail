@@ -1,6 +1,8 @@
 class CocktailsController < ApplicationController
   def index
-  end
+    @cocktails = Cocktail.all
+    @random = rand(1..10)
+   end
 
   def show  
     @cocktail = Cocktail.find(params[:id])

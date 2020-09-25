@@ -1,0 +1,40 @@
+.form-container {
+  height: 250px; 
+  width: 500px;
+  background-color:white;
+  margin-top: 200px; 
+  border: 1px solid lightblue;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
+  text-align: center;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+   
+}
+
+.form-container-new {
+  height: 500px; 
+  width: 500px;
+  background-color:white;
+  margin-top: 200px; 
+  border: 1px solid lightblue;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
+  text-align: center;
+  line-height: 25px;
+  position: relative;
+}
+
+.form-delete-button {
+  position: absolute;
+  right: 20px; 
+}
+
+
+.form-list {
+  list-style-type: none;
+  text-align: left;
+}
+
+body {
+ background-color: #F4F4F4;
+}
