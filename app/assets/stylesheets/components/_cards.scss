@@ -6,7 +6,8 @@
 }
 
 .grid-container { 
-  padding: 2rem; 
+  border-bottom: 1px solid $green; 
+  padding-bottom: 30px;
 }
  .cards-grid {
   display: grid; 
@@ -14,7 +15,7 @@
   grid-template-rows: 350px; 
   grid-gap: 30px;
   margin-left: 100px; 
-  margin-right: 100px; 
+  margin-right: 100px;
 } 
 
 .cocktail-card {
@@ -22,6 +23,7 @@
   background-color:white;
   text-align: center;
   opacity: 0.9;
+  border: 1px solid $green; 
   // font-size: 12px;
 }
 
@@ -37,12 +39,15 @@
 }
 
 .card-button {
-  // position: absolute;
-  // bottom: 12px;
-  // right: 150px;
   margin: 0 auto; 
   margin-top: 10px;
 }
+.card-delete {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}
+
 
 .center-within {
   // margin: 0 auto;

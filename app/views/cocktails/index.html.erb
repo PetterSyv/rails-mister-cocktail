@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <div class="index-jumbotron">
-      <h1 class="display-2">DOUBLE TROUBLE LOUNGE & BAR </h1>
+      <h1 class="display-2">THE DOUBLE TROUBLE COCKTAIL BAR </h1>
       <p class="lead display-4 sub-header" >The place where everything comes in TWO!</p>
     </div>
   </div>
@@ -13,9 +13,12 @@
       <% random = rand(1..10) %>
         <div class="cocktail-card" >
             <h2 id="card-heading"><%=cocktail.name%></h2>
+              <div class="card-delete">
+                  <%=link_to "X", cocktail_path(cocktail.id), class:"btn btn-outline-danger"%>
+              </div>
             <%= image_tag "#{random}.jpg", class:"grid-image" %>
             <div class="card-button">
-              <%=link_to "Details about this cocktail", cocktail_path(cocktail.id), class:"btn btn-secondary"%> 
+              <%=link_to "Details about this cocktail", cocktail_path(cocktail.id), class:"btn btn-outline-success"%> 
             </div>               
           </div>
     <% end %>
@@ -26,7 +29,7 @@
 
 <div class="jumbotron">
   <div class="center-within">
-    <%=link_to "Add Cocktail", new_cocktail_path, class: "btn btn-secondary btn-lg"%>   
+    <%=link_to "Add Cocktail", new_cocktail_path, class: "btn btn-outline-success btn-lg"%>   
   </div>
  </div>
 
