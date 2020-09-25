@@ -1,8 +1,8 @@
-<div class="jumbotron jumbotron-fluid" style="background-color: #CBE8C4; border-bottom: 2px solid #90be6d">
+<div class="jumbotron jumbotron-fluid" style="background-color: #CBE8C4;>
   <div class="container">
     <div class="index-jumbotron">
       <h1 class="display-2" style="text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;">THE DOUBLE TROUBLE COCKTAIL BAR </h1>
-      <p class="lead display-4 sub-header" >The place where everything comes in pairs!</p>
+      <%# <p class="lead display-4 sub-header" >The place where everything comes in pairs!</p> %>
     </div>
   </div>
 </div>
@@ -10,7 +10,7 @@
 <div class="grid-container">
   <div class="cards-grid">
     <%@cocktails.each do |cocktail| %>
-      <% random = rand(1..10) %>
+      <% random = rand(1..20) %>
         <div class="cocktail-card" >
             <h2 id="card-heading"><%=cocktail.name%></h2>
               <div class="card-delete">
@@ -26,7 +26,7 @@
   </div>
 </div>
 
-<div class="jumbotron" style="background-color: #CBE8C4; border: 2px solid #90be6d">
+<div class="jumbotron" style="background-color: #CBE8C4">
   <div class="center-within">
     <%=link_to "Add Cocktail", new_cocktail_path, class: "btn btn-outline-success btn-lg"%>   
   </div>

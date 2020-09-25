@@ -13,15 +13,13 @@
   <%= simple_form_for([@cocktail, @dose]) do |f| %>
   <%= f.association :ingredient %>
   <%= f.input :description %>
-  <%= f.submit 'Add Ingredient', class: "btn btn-outline-success" %>  
+  <%= f.submit 'Add Ingredient', class: "btn btn-outline-success" %>
+  <%= f.submit 'Save Cocktail', class: "btn btn-outline-success" %>  
   <% end %>
 </div>
-<%# <% raise %> 
 
 <div class="button">
-
-<%=link_to "Go back to Cocktails", cocktails_path, class: "btn btn-secondary" %>
-
+  <%=link_to "Go back to Cocktails", cocktails_path, class: "btn btn-secondary" %>
 </div>
 
 

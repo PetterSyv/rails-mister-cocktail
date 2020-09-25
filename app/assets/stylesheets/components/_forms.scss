@@ -16,7 +16,7 @@
   width: 500px;
   background-color:white;
   margin-top: 200px; 
-  border: 1px solid lightblue;
+  border: 1px solid lightgrey;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
   text-align: center;
   line-height: 25px;
@@ -26,7 +26,6 @@
 .form-delete-button {
   position: absolute;
   right: 20px; 
-  
 }
 
 .form-list {
@@ -37,9 +36,10 @@
 }
 
 .form-ingredients {
-  
   color:black;
   font-weight: bold;
+  line-height: 30px;
+
 }
 
 .form-add-ingredient {
@@ -48,5 +48,5 @@
 }
 
 body {
- background-color: #DAD9E8;
+ background-color: #f4f4f4;
 }
